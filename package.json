@@ -1,0 +1,39 @@
+{
+  "name": "electron-hello-world",
+   "productName": "Test App",
+  "version": "0.1.0",
+  "main": "main.js",
+  "author": "telles",
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^3.0.4",
+    "electron-builder": "^20.28.4",
+    "electron-installer-debian": "^1.0.0"
+  },
+  "build": {
+    "appId": "my.application.medium.hue",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "linux": {
+        "target": "deb",
+        "executableName": "programaHue",
+        "synopsis": "Programa teste",
+        "description": "Descriação do programa",
+        "category":"Utility"
+    }
+  }
+}
