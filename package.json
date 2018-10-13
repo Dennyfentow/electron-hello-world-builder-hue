@@ -1,9 +1,15 @@
 {
   "name": "electron-hello-world",
-   "productName": "Test App",
+  "productName": "Test App",
   "version": "0.1.0",
   "main": "main.js",
-  "author": "telles",
+  "author": {
+    "name": "Daniel dos Santos",
+    "email": "megabradock@gmail.com",
+    "url": "https://github.com/Dennyfentow/electron-hello-world-builder-hue.git"
+  },
+  
+  "homepage": "https://github.com/Dennyfentow/electron-hello-world-builder-hue.git",
   "scripts": {
     "start": "electron main.js",
     "pack": "electron-builder --dir",
@@ -14,6 +20,9 @@
     "electron": "^3.0.4",
     "electron-builder": "^20.28.4",
     "electron-installer-debian": "^1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/Dennyfentow/electron-hello-world-builder-hue.git"
   },
   "build": {
     "appId": "my.application.medium.hue",
